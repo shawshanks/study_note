@@ -1,7 +1,20 @@
 {% extends "learning_logs/base.html" %}
 
-{% block content %}
+{% block header %}
 
-<p>记录下你的所思所想, 世界因idea而改变!</p>
+    <div class="jumbotron">
+        <h2><strong>记录下你的所思所想, 世界因idea而改变!</strong></h2>
+
+    </div>
+{% endblock header %}
+
+{% block content %}
+    <h3>
+    <a href="{% url 'users:register' %}">在这里注册一个账户</a>
+    创建你自己的专属笔记☺
+    </h3>
+    <h3>
+    你的灵感值得记录☺ 在不同的主题下记录下你的思想精华!
+    </h3>
 
 {% endblock content %}
