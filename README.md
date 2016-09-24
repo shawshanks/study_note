@@ -22,7 +22,6 @@
  使用相对链接, 避免生成硬链接, 要修改项目中的URL, 只需修改urls.py中的URL模式. 易于日后的修改和维护.
 2. 表单
 
-
 ## 5.项目进行中遇到的坑 :sob:
 ###1. 项目部署
  使用`git push hero master`命令推送到Heroku创建的库中时, 没有添加 Procfile文件,导致推送后出现` code=H14 desc="No web processes running" `错误.  并且使用`heroku ps:scale web=1` 出现 `Couldn't find that formation.`
