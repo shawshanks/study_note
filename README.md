@@ -30,7 +30,7 @@
  1. [Heroku Error Codes](https://devcenter.heroku.com/articles/error-codes#h14-no-web-dynos-running)
  2. Pracefile作用: 告诉Heroku启动哪些进程, 以便能正确地提哦那个项目提供的服务.
  
-###2.3 添加错误页面之后,对settings.py的设置
+###2. 添加错误页面之后,对settings.py的设置
 ```
 TEMPLATE =[
     { 
@@ -44,7 +44,7 @@ TEMPLATE =[
 误将 `learning_log`写为`learning_logs`导致调试不过关. 因为路径错误, 所以Django找不到错误模板的所在地.
 其实不写`learning_log`也可
 
-###2.4 关于同时push代码至github和heroku
+###2. 关于同时push代码至github和heroku
 因为是在pycharm中创建和开始项目的, 而项目完成后需要部署到heroku中, 同时又要提交到github. 正确的姿势应该是:
  1. 先将代码添加和提交`git add`和`git commit`.
  2. 然后先使用`git push heroku master`将代码提交至heroku.
